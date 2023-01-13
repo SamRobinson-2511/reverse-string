@@ -1,0 +1,26 @@
+
+
+++ https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/
+
+
+1. Reverse a String with Built-In Functions 
+--- JavaScript: 
+
+    function reverseString(string) {
+        let splitString = string.split(" ")
+        let reverseArray = splitString.reverse()
+        let joinArray = reverseArray.join(" ")
+        return joinArray
+    }
+    reverseString('hello')
+
+    -------or----------
+
+    function reverseString(string) {
+        return string.split(" ").reverse().join(" ");
+    }
+    reverseString("hello")
+
+--- Ruby: 
+
+    def reverse_string
